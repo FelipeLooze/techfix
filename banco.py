@@ -4,7 +4,6 @@ from pathlib import Path
 
 from dotenv import load_dotenv
 from supabase import create_client
-from supabase.lib.client_options import ClientOptions
 
 load_dotenv(Path(__file__).with_name('.env'), encoding='utf-8-sig')
 SUPABASE_URL = os.getenv('SUPABASE_URL', '')
@@ -35,8 +34,7 @@ def executar(consulta):
         raise ValueError('Configure SUPABASE_URL e SUPABASE_KEY no .env ou secrets.toml.')
     # Todo acesso ao banco passa por este tratamento de erros.
     try:
-        banco = create_client(SUPABASE_URL, SUPABASE_KEY,
-                              options=ClientOptions(postgrest_client_timeout=15))
+        banco = create_client(SUPABASE_URL, SUPABASE_KEY)
         return consulta(banco).execute().data
     except Exception as erro:
         codigo = str(getattr(erro, 'code', ''))

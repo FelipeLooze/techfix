@@ -76,12 +76,11 @@ Os dois aplicativos precisam apontar para o mesmo projeto Supabase.
 
 ## Evidências
 
-Salve em evidencias/:
+A pasta evidencias/ contém os prints do Gradio, das tabelas do Supabase e das
+abas Consultar, Editar/Excluir e Indicadores do Streamlit.
 
-1. Gradio no celular e confirmação com o número da OS.
-2. Tabelas clientes e ordens_servico preenchidas no Table Editor do Supabase.
-3. Abas Consultar, Editar/Excluir e Indicadores no Streamlit.
+O print gradio_mobile.jpg foi feito em uma visualização de 390 px de largura.
+Após testar no celular físico, substitua-o pela captura do aparelho.
 
-Use exemplos como Ana Exemplo, ana@example.com e 11999990001.
-Não inclua credenciais nos prints. Para a entrega, compacte a pasta sem .env,
-secrets.toml, .venv e __pycache__.
+Os testes usam apenas dados fictícios. O banco tem exemplos nos cinco status.
+Não inclua credenciais nos prints ou na entrega.
