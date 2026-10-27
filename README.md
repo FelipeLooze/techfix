@@ -79,8 +79,9 @@ Os dois aplicativos precisam apontar para o mesmo projeto Supabase.
 A pasta evidencias/ contém os prints do Gradio, das tabelas do Supabase e das
 abas Consultar, Editar/Excluir e Indicadores do Streamlit.
 
-O print gradio_mobile.jpg foi feito em uma visualização de 390 px de largura.
-Após testar no celular físico, substitua-o pela captura do aparelho.
+Os prints gradio_mobile.png e gradio_mobile_confirmacao.png foram feitos no celular
+físico e mostram o cadastro fictício de João Santos, com a OS nº 9 em status Aberto.
+O teste foi realizado pela rede local, com acesso protegido por senha.
 
 Os testes usam apenas dados fictícios. O banco tem exemplos nos cinco status.
 Não inclua credenciais nos prints ou na entrega.
